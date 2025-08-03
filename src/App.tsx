@@ -32,7 +32,8 @@ function App() {
   const addUser = async (name: string, email: string) => {
     const newUser = { name, email };
     await api.post("/users", newUser);
-    setUsers((prev) => [...prev, { ...newUser, id: Date.now() }]);
+    setUsers((prev) => [...prev, { ...newUser, id: 1 }]);
+    // setUsers((prev) => [...prev, { ...newUser, id: Date.now() }]); 
     // const maxId =
     //     prev.length > 0 ? Math.max(...prev.map((u) => u.id ?? 0)) : 0;
     //   const nextId = maxId + 1;

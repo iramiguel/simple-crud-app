@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  background-color: #161616; /* Or match your root's #343454 */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #111111;
+  color: wheat;
+  border-radius: 5%;
+}
+
+
+.logo {
+  height: 80px;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease, filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em #007accaa);
+  transform: scale(1.05);
+}
+
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .logo.react.spin {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  background-color: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 1.5rem;
+  text-align: left;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+form,
+.user-table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+input,
+button,
+select {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #007acc;
+  box-shadow: 0 0 0 2px #007acc33;
+}
+
+button {
+  cursor: pointer;
+  background-color: wheat;
+  color: rgb(44, 44, 44);
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+
+.read-the-docs {
+  margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #888;
+  font-style: italic;
+}
+
+.list-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.list-names {
+
+}
+
+.submit-btn {
+  display: inline-block;
+  padding: 0.5rem 2.5rem;
+}
+

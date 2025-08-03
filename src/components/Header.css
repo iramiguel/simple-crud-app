@@ -1,0 +1,43 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    width: 100vw;
+    height: 5.4em;
+    background-color: #111111;
+    overflow: hidden;
+}
+
+
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    max-width: 1200px;
+    padding-left: 0.3em;
+    padding-right: 0.7em;
+}
+
+.header-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+.header-logo h1 {
+    font-size: 3em;
+    color: wheat;
+
+}

@@ -11,7 +11,6 @@ function App() {
   const [error, setError] = useState("");
   const [editingUser, setEditingUser] = useState<User | null>(null);
 
-
   const fetchUsers = async () => {
     setLoading(true);
 
@@ -33,11 +32,13 @@ function App() {
     const newUser = { name, email };
     await api.post("/users", newUser);
     setUsers((prev) => [...prev, { ...newUser, id: 1 }]);
-    // setUsers((prev) => [...prev, { ...newUser, id: Date.now() }]); 
-    // const maxId =
+    // setUsers((prev) => [...prev, { ...newUser, id: Date.now() }]);
+    // setUsers((prev) => {
+    //   const maxId =
     //     prev.length > 0 ? Math.max(...prev.map((u) => u.id ?? 0)) : 0;
     //   const nextId = maxId + 1;
     //   return [...prev, { ...newUser, id: nextId }];
+    // });
   };
 
   const updateUser = async (id: number, name: string, email: string) => {

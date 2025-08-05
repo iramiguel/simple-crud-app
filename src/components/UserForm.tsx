@@ -43,6 +43,7 @@ export default function UserForm({
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Email"
+          type="email"
           required
         />
       </div>
